@@ -8,5 +8,5 @@ class EnvioAereo(Envio):
     
     def calcular_costo(self) -> float:
         costo_base = self.calcular_costo_base()
-        total = costo_base + (self.tarifa_aeropuerto + self.impuesto_aereo)
+        total = costo_base + (self.tarifa_aeropuerto * self.impuesto_aereo)
         return total
