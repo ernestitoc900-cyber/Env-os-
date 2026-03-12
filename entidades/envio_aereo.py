@@ -1,7 +1,8 @@
 from entidades.envio import Envio
 
 class EnvioAereo(Envio):
-    def __init__(self, cliente: str, dirección: str, peso: float, distancia: float, tarifa_aeropuerto: float, impuesto_aereo: float):
+    def __init__(self, cliente: str, dirección: str, peso: float, 
+                 distancia: float, tarifa_aeropuerto: float, impuesto_aereo: float):
         super().__init__(cliente, dirección, peso, distancia)
         self.tarifa_aeropuerto = tarifa_aeropuerto
         self.impuesto_aereo = impuesto_aereo
